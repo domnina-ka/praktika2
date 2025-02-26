@@ -2,16 +2,68 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Привет</title>
     <style>
-        h1 {
-            text-align: center;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
         }
+        .container {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+        .text {
+            position: absolute;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            display: flex;
+        }
+
+        /* Первое слово (верхний левый угол) */
+        .text1 { top: 30px; left: 20px; }
+        .text1 span:nth-child(1) { color: blue; font-size: 64px; }
+        .text1 span:nth-child(2) { color: orange; font-size: 48px; }
+        .text1 span:nth-child(3) { color: red; font-size: 36px; }
+        .text1 span:nth-child(4) { color: green; font-size: 28px; }
+        .text1 span:nth-child(5) { color: brown; font-size: 24px; }
+
+        /* Второе слово (нижний центр) */
+        .text2 { bottom: 20px; left: 300px; }
+        .text2 span:nth-child(1) { color: red; font-size: 64px; }
+        .text2 span:nth-child(2) { color: purple; font-size: 48px; }
+        .text2 span:nth-child(3) { color: blue; font-size: 36px; }
+        .text2 span:nth-child(4) { color: green; font-size: 36px; }
+        .text2 span:nth-child(5) { color: yellow; font-size: 28px; }
+
+        /* Третье слово (верхний правый угол) */
+        .text3 { top: 20px; right: 20px; }
+        .text3 span:nth-child(1) { color: red; font-size: 24px; }
+        .text3 span:nth-child(2) { color: yellow; font-size: 28px; }
+        .text3 span:nth-child(3) { color: green; font-size: 36px; }
+        .text3 span:nth-child(4) { color: blue; font-size: 48px; }
+        .text3 span:nth-child(5) { color: purple; font-size: 64px; }
+
     </style>
 </head>
 <body>
-    <h1>ПРИВЕТ</h1>
-    <h1>ПРИВЕТ</h1>
-    <h1>ПРИВЕТ</h1>
+
+    <div class="container">
+        <div class="text text1">
+            <span>П</span><span>Р</span><span>И</span><span>В</span><span>ЕТ</span>
+        </div>
+        <div class="text text2">
+            <span>П</span><span>Р</span><span>И</span><span>В</span><span>ЕТ</span>
+        </div>
+        <div class="text text3">
+            <span>П</span><span>Р</span><span>И</span><span>В</span><span>ЕТ</span>
+        </div>
+    </div>
+
 </body>
 </html>
