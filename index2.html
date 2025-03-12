@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Привет</title>
+    <title>Задание 2</title>
     <style>
         body {
             display: flex;
@@ -11,6 +11,7 @@
             align-items: center;
             height: 100vh;
             background-color: white;
+            margin: 0;
         }
         .container {
             width: 800px;
@@ -23,31 +24,48 @@
             font-family: Arial, sans-serif;
             font-weight: bold;
             display: flex;
+            align-items: baseline; /* Выровнено по нижнему краю */
         }
 
-        /* Первое слово (верхний левый угол) */
-        .text1 { top: 30px; left: 20px; }
+        /* Первое слово (слева посередине, выровнено по нижнему краю) */
+        .text1 {
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
         .text1 span:nth-child(1) { color: blue; font-size: 64px; }
-        .text1 span:nth-child(2) { color: orange; font-size: 48px; }
+        .text1 span:nth-child(2) { color: orange; font-size: 63px;}
         .text1 span:nth-child(3) { color: red; font-size: 36px; }
-        .text1 span:nth-child(4) { color: green; font-size: 28px; }
-        .text1 span:nth-child(5) { color: brown; font-size: 24px; }
+        .text1 span:nth-child(4) { color: rgb(136, 221, 221); font-size: 28px; }
+        .text1 span:nth-child(5) { color: rgb(118, 216, 79); font-size: 23px }
+        .text1 span:nth-child(6) { color: rgb(216, 79, 79); font-size: 22px; }
+
 
         /* Второе слово (нижний центр) */
-        .text2 { bottom: 20px; left: 300px; }
+        .text2 {
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
         .text2 span:nth-child(1) { color: red; font-size: 64px; }
-        .text2 span:nth-child(2) { color: purple; font-size: 48px; }
-        .text2 span:nth-child(3) { color: blue; font-size: 36px; }
-        .text2 span:nth-child(4) { color: green; font-size: 36px; }
-        .text2 span:nth-child(5) { color: yellow; font-size: 28px; }
+        .text2 span:nth-child(2) { color: rgb(196, 55, 67); font-size: 48px; }
+        .text2 span:nth-child(3) { color: blue; font-size: 32px;}
+        .text2 span:nth-child(4) { color: rgb(28, 19, 158); font-size: 40px;}
+        .text2 span:nth-child(5) { color: rgb(57, 179, 63); font-size: 48px;}
+        .text2 span:nth-child(6){ color: rgb(26, 168, 26); font-size: 64px; }
 
         /* Третье слово (верхний правый угол) */
-        .text3 { top: 20px; right: 20px; }
+        .text3 {
+            top: 20px;
+            right: 20px;
+        }
         .text3 span:nth-child(1) { color: red; font-size: 24px; }
         .text3 span:nth-child(2) { color: yellow; font-size: 28px; }
         .text3 span:nth-child(3) { color: green; font-size: 36px; }
         .text3 span:nth-child(4) { color: blue; font-size: 48px; }
-        .text3 span:nth-child(5) { color: purple; font-size: 64px; }
+        .text3 span:nth-child(5) { color: rgb(175, 37, 37); font-size: 64px; }
+        .text3 span:nth-child(6){ color: purple; font-size: 64px; }
+
 
     </style>
 </head>
@@ -55,13 +73,13 @@
 
     <div class="container">
         <div class="text text1">
-            <span>П</span><span>Р</span><span>И</span><span>В</span><span>ЕТ</span>
+            <span>П</span><span>Р</span><span>И</span><span>В</span><span>Е</span><span>Т</span>
         </div>
         <div class="text text2">
-            <span>П</span><span>Р</span><span>И</span><span>В</span><span>ЕТ</span>
+            <span>П</span><span>Р</span><span>И</span><span>В</span><span>Е</span><span>Т</span>
         </div>
         <div class="text text3">
-            <span>П</span><span>Р</span><span>И</span><span>В</span><span>ЕТ</span>
+            <span>П</span><span>Р</span><span>И</span><span>В</span><span>Е</span><span>Т</span>
         </div>
     </div>
 
