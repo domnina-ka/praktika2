@@ -2,25 +2,76 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Правила оформления</title>
+    <title>Задание 4</title>
     <style>
-        .container {
-            width: 500px;
-            padding: 10px;
-            background-color: lightgreen;
-            border: 2px solid black;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff; /* Белый фон страницы */
         }
-        b { font-weight: bold; }
-        i { font-style: italic; }
-        .blue { color: blue; }
-        .red { color: red; }
-        .green { color: green; }
+        .container {
+            width: 600px;
+            padding: 20px;
+            background-color: #CCFFCC; /* Светло-зелёный фон */
+            border: 2px solid black;
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 22px;
+        }
+        .bold-red {
+            font-weight: bold;
+            color: red;
+        }
+        .bold-green {
+            font-weight: bold;
+            color: green;
+        }
+        .bold-blue {
+            font-weight: bold;
+            color: blue;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .brown {
+            color: brown;
+        }
+        .header-description {
+            text-align: right; /* Выравниваем текст вправо */
+            margin-right: 20px; /* Двигаем немного правее */
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <p><b>Некоторые <span class="red">правила</span> <span class="green">ОФОРМЛЕНИЯ</span></b></p>
-        <p><span class="blue">Существуют</span> принятые в издательском деле правила среды, в которой работают <u>браузеры</u>. Так, <b>заголовок первого уровня H1</b> выводится крупным <b>жирным шрифтом</b>, <i>цитаты CITE</i> – курсивом, абзацы P отделяются друг от друга <span class="strikethrough">пустыми строками</span>, элементы списка UL <span class="strikethrough">снабжаются маркерами</span>, элементы списка OL – номерами.</p>
+        <h2>Некоторые <span class="bold-red">правила</span> <span class="bold-green">ОФОРМЛЕНИЯ</span></h2>
+        <p><span class="bold-blue">Существуют</span> принятые <span style="font-family: 'Courier New', Courier, monospace;"> издательском деле </span>правила среды,  
+        в которой работают <span class="underline">браузе<sub> <span class="underline" style="font-size:12px;">ры</sub></span>.  
+        </p>
+        
+        <p class="header-description">
+            Так, <b>заголовок первого уровня</b> <span class="bold-blue">H1</span> выводится крупным <br>
+            <b class="bold-red">жирным шрифтом</b>, <i>цитаты</i>
+        </p>
+
+        <p>
+            <b><u>CITE</u></b> – курсивом, абзацы <b>P</b> отделяются друг от друга  
+            <span class="strikethrough">пустыми строками<sup class="superscript">1</sup></span>,  
+            элементы списка <b>UL</b> <span class="strikethrough">снабжаются</span> маркерами<sup class="superscript">ами</sup>,  
+            <span class="brown">элементы списка <b>OL</b> – номерами</span>.
+        </p> 
     </div>
 </body>
 </html>
